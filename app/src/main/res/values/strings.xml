@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">fion</string>
+    <string name="player">선수 검색</string>
+    <string name="user">유저 조회</string>
+
 </resources>

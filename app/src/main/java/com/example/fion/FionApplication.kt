@@ -9,6 +9,7 @@ import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 
 class FionApplication : Application() {
+
     override fun onCreate() {
         super.onCreate()
         appContext = this
