@@ -13,4 +13,11 @@ class UserInfoFragment: BaseFragment<UserInfoViewModel, FragmentUserInfoBinding>
     override fun observeData() {
 
     }
+
+    companion object {
+
+        fun newInstance() = UserInfoFragment()
+
+        const val TAG = "UserInfoFragment"
+    }
 }

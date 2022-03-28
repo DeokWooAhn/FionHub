@@ -1,12 +1,18 @@
 package com.example.fion.di
 
+import com.example.fion.screen.playersearch.PlayerSearchViewModel
+import com.example.fion.screen.userinfo.UserInfoViewModel
 import com.example.fion.util.provider.DefaultResourcesProvider
 import com.example.fion.util.provider.ResourceProvider
 import kotlinx.coroutines.Dispatchers
 import org.koin.android.ext.koin.androidApplication
+import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val appModule = module {
+
+    viewModel { UserInfoViewModel() }
+    viewModel { PlayerSearchViewModel() }
 
     single { provideGsonConvertFactory() }
     single { buildOkHttpClient() }
