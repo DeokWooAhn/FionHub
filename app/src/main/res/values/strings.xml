@@ -2,5 +2,9 @@
     <string name="app_name">fion</string>
     <string name="player">선수 검색</string>
     <string name="user">유저 조회</string>
+    <string name="manager_search_hint">구단주명을 검색해주세요.</string>
+    <string name="search">검색</string>
+    <string name="manager_searh">구단주 검색</string>
+    <string name="manager_info">구단주 정보</string>
 
 </resources>

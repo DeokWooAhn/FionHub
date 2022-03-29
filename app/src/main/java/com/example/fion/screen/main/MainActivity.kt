@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import com.example.fion.R
 import com.example.fion.databinding.ActivityMainBinding
 import com.example.fion.screen.playersearch.PlayerSearchFragment
-import com.example.fion.screen.userinfo.UserInfoFragment
+import com.example.fion.screen.managerinfo.ManagerInfoFragment
 import com.google.android.material.navigation.NavigationBarView
 
 class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener {
@@ -24,13 +24,13 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
 
     private fun initView() = with(binding) {
         bottomNav.setOnItemSelectedListener(this@MainActivity)
-        showFragment(UserInfoFragment.newInstance(), UserInfoFragment.TAG)
+        showFragment(ManagerInfoFragment.newInstance(), ManagerInfoFragment.TAG)
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         return when(item.itemId) {
             R.id.menu_user -> {
-                showFragment(UserInfoFragment.newInstance(), UserInfoFragment.TAG)
+                showFragment(ManagerInfoFragment.newInstance(), ManagerInfoFragment.TAG)
                 true
             }
             R.id.menu_player -> {

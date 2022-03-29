@@ -2,6 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Fion" parent="Theme.MaterialComponents.NoActionBar">
         <item name="toolbarStyle">@style/Widget.fion.Toolbar</item>
+        <item name="toolbarWithArrowButtonStyle">@style/Widget.fion.Toolbar.WithArrow</item>
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>

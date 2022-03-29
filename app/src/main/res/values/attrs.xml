@@ -2,5 +2,5 @@
 <resources>
 
     <attr name="toolbarStlye" format="reference" />
-
+    <attr name="toolbarWithArrowButtonStyle" format="reference" />
 </resources>

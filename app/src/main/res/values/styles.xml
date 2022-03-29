@@ -5,5 +5,10 @@
         <item name="android:background">@color/white</item>
         <item name="android:title">@null</item>
     </style>
+
+    <style name="Widget.fion.Toolbar.WithArrow" parent="Widget.fion.Toolbar">
+        <item name="navigationIcon">@drawable/ic_back</item>
+        <item name="android:background">@color/white</item>
+    </style>
     
 </resources>

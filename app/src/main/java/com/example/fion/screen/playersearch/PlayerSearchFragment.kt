@@ -10,6 +10,10 @@ class PlayerSearchFragment: BaseFragment<PlayerSearchViewModel, FragmentPlayerSe
 
     override fun getViewBinding(): FragmentPlayerSearchBinding = FragmentPlayerSearchBinding.inflate(layoutInflater)
 
+    override fun initViews() {
+        super.initViews()
+    }
+
     override fun observeData() {
 
     }

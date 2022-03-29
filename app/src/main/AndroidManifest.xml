@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fion">
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".FionApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Fion"
-        android:name=".FionApplication">
+        android:theme="@style/Theme.Fion">
+        <activity
+            android:name=".screen.managerinfo.detail.ManagerDetailActivity"
+            android:exported="false" />
         <activity
             android:name=".screen.main.MainActivity"
             android:exported="true">

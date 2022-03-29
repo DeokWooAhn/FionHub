@@ -1,7 +1,9 @@
 package com.example.fion.di
 
+import com.example.fion.data.repository.DefatulManagerInfoRepository
+import com.example.fion.data.repository.ManagerInfoRepository
 import com.example.fion.screen.playersearch.PlayerSearchViewModel
-import com.example.fion.screen.userinfo.UserInfoViewModel
+import com.example.fion.screen.managerinfo.ManagerInfoViewModel
 import com.example.fion.util.provider.DefaultResourcesProvider
 import com.example.fion.util.provider.ResourceProvider
 import kotlinx.coroutines.Dispatchers
@@ -11,8 +13,10 @@ import org.koin.dsl.module
 
 val appModule = module {
 
-    viewModel { UserInfoViewModel() }
+    viewModel { ManagerInfoViewModel() }
     viewModel { PlayerSearchViewModel() }
+
+    single<ManagerInfoRepository> { DefatulManagerInfoRepository(get(), get()) }
 
     single { provideGsonConvertFactory() }
     single { buildOkHttpClient() }
